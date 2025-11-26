@@ -656,7 +656,7 @@ const World = {
                 "backflip": [newAudio("Audio/Character/Mario/Backflip.mp3", player), newAudio("Audio/Character/Mario/Backflip2.mp3", player), newAudio("Audio/Character/Mario/Backflip3.mp3", player)],
             },
             "SFX": {
-                "jump": newAudio("Audio/SFX/Jump.mp3", player),
+                "jump": newAudio("Audio/SFX/jump.mp3", player),
                 "superJump": newAudio("Audio/SFX/SuperJump.mp3", player),
                 "fire": newAudio("Audio/SFX/Fire.mp3", player),
             }
@@ -855,7 +855,7 @@ const World = {
 const music = {
     "blockCity": new Audio("Audio/Music/BlockWorld.mp3"),
     "enemyTowers": new Audio("Audio/Music/EnemyTowers.mp3"),
-    "die": new Audio("Audio/Music/die.mp3"),
+    "die": new Audio("Audio/Music/Die.mp3"),
     "goal": new Audio("Audio/Music/Goal.mp3"),
     "gameOver": new Audio("Audio/Music/GameOver.mp3"),
 }
