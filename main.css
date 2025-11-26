@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+canvas {
+    display: block;
+    margin: 0 auto;
+    background: black;
+}
+
+/* Audio toggle buttons */
+.audio-controls {
+    font-family: Arial, sans-serif;
+}
+.audio-toggle {
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    backdrop-filter: blur(4px);
+}
+.audio-toggle.muted {
+    background: rgba(255,0,0,0.12);
+    border-color: rgba(255,0,0,0.3);
+}
+.audio-toggle:focus { outline: 2px solid rgba(255,255,255,0.12); }
