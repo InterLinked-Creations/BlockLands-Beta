@@ -658,7 +658,7 @@ const World = {
             "SFX": {
                 "jump": newAudio("Audio/SFX/jump.mp3", player),
                 "superJump": newAudio("Audio/SFX/SuperJump.mp3", player),
-                "fire": newAudio("Audio/SFX/Fire.mp3", player),
+                "fire": newAudio("Audio/SFX/fire.mp3", player),
             }
         };
 
@@ -857,7 +857,7 @@ const music = {
     "enemyTowers": new Audio("Audio/Music/EnemyTowers.mp3"),
     "die": new Audio("Audio/Music/Die.mp3"),
     "goal": new Audio("Audio/Music/Goal.mp3"),
-    "gameOver": new Audio("Audio/Music/GameOver.mp3"),
+    "gameOver": new Audio("Audio/Music/gameover.mp3"),
 }
 
 var currentSong = null;
