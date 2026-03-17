@@ -431,7 +431,7 @@ function addAudioToggleButtons() {
     soundBtn.addEventListener('click', () => { toggleSoundMuted(); });
 
     const exitBtn = document.createElement('button');
-    exirBtn.id = 'exit-button';
+    exitBtn.id = 'exit-button';
     exitBtn.textContent = 'Exit';
     soundBtn.type = 'button';
     exitBtn.addEventListener('click', () => {
