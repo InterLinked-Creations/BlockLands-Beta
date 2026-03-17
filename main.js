@@ -430,8 +430,27 @@ function addAudioToggleButtons() {
     soundBtn.type = 'button';
     soundBtn.addEventListener('click', () => { toggleSoundMuted(); });
 
+    const exitBtn = document.createElement('button');
+    exirBtn.id = 'exit-button';
+    exitBtn.textContent = 'Exit';
+    soundBtn.type = 'button';
+    exitBtn.addEventListener('click', () => {
+        // Check if the page can find the MainFrame element in the parent (indicating it's in an iframe)
+
+        // Web Edition
+        if (typeof parent.parent.window.mainFrame == 'object' && parent.parent.window.mainFrame.mode == "web") {
+            parent.parent.window.mainFrame.page.home();
+        }
+        // Desktop Edition
+        else {
+            alert('Quit feature is partally implemented, but it only works in a supported environment.');
+        }
+    });
+    
+
     container.appendChild(musicBtn);
     container.appendChild(soundBtn);
+    container.appendChild(exitBtn);
     document.body.appendChild(container);
 
     updateAudioButtons();
